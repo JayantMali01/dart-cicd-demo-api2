@@ -69,10 +69,11 @@ pipeline
 				echo "cloudhub env ${cloudhub_env}"
 				echo "suffix ${env_suffix}"
 				bat "mvn test -Dmule.env=${mule_env} -Dmule.encryptionKey=${SECRET_KEY_PSW} -Dapp.coverage=60"
-			
+		
 			}
 		
 		}
+		
 		
 		stage('Deploy CloudHub') 
 		{
